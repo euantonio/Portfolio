@@ -1,0 +1,536 @@
+$theme-colors: (
+    "primary": #5CFF58,
+    "danger": #fd3b3b,
+    "success": #5fe37e,
+);
+
+// Cor de fundo body
+$body-bg: #171717;
+
+
+// Cor de fundo do menu (#151515)
+
+// Importar Bootstrap
+@import "node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    cursor: default;
+}
+
+// Barra rolagem
+body::-webkit-scrollbar{
+    width:0.5rem;
+    background-color:#151515;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color:#58D956;
+    border-radius: 30px;
+}
+
+// Menu
+header {
+    a {
+        color: #ffff;
+        text-decoration: none;
+        transition: 0.3s;
+
+        &:hover {
+            color: #5CFF58;
+        }
+    }
+
+    .logo {
+        height: 100px;
+        width: auto;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #151515;
+        height: 8vh;
+
+        .nav-list {
+            list-style: none;
+            display: flex;
+
+            li {
+                letter-spacing: 1px;
+                margin-left: 32px;
+                font-weight: 500;
+
+                .remove-background {
+                    color: #151515;
+                    background: linear-gradient(90deg, #5CFF58 -0.95%, #58D956 100%);
+                    padding: 10px 15px;
+                    border-radius: 2px;
+                    
+                    &:hover {
+                        background: linear-gradient(90deg, #58D956 -0.95%, #5CFF58 100%);
+                    }
+                }
+            }
+        }
+
+        .mobile-menu {
+            cursor: pointer;
+            display: none;
+
+            div {
+                width: 32px;
+                height: 2px;
+                background-color: #fff;
+                margin: 8px;
+                transition: 0.3s;
+            }
+        }
+    }
+}
+
+// Fim menu
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+// Container principal
+.container-principal {
+    margin-top: 100px;
+}
+
+#imagem-principal {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.text-gray-default {
+    color: #858585;
+}
+
+.link-principal-container {
+    transition: 260ms ease-in;
+    font-size: 19px;
+    max-width: fit-content;
+
+    &:hover {
+        color: #5fe37e !important;
+        transform: translateX(18px) !important;
+    }
+
+    i {
+        vertical-align: middle;
+        margin-left: 12px;
+    }
+}
+
+.container-esquerda-principal {
+    display: flex;
+    flex-direction: column;
+}
+
+#view-in-english {
+    font-weight: bold;
+    padding: 14px 0;
+    width: 40%;
+    margin-bottom: 40px;
+}
+
+// Divisão
+.divide {
+    border-radius: 50px;
+    height: 2px;
+    background-color: rgb(43, 43, 43);
+    width: 30vw;
+    margin: 15vh auto;
+}
+
+// Cards skills
+.skill-item {
+    height: 350px;
+    width: 350px;
+    background-color: #212121;
+    border-radius: 3px;
+    padding: 30px;
+    transition: 130ms ease;
+    margin: 0 20px 20px 0;
+
+    .skill-img {
+        background-color: #171717;
+        height: 25%;
+        width: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 500px;
+        overflow: hidden;
+        margin-bottom: 15px;
+
+        img {
+            height: 50%;
+            width: auto;
+        }
+    }
+
+    .card-title-skill {
+        font-size: 20px;
+    }
+
+    .divider-skills {
+        height: 2px;
+        width: 35%;
+        background-color: #58D956;
+    }
+
+    .description-skill {
+        font-size: 14px;
+    }
+
+    &:hover {
+        outline: 3px solid #58D956;
+        transform: translateY(-5px);
+    }
+}
+
+.cards-skills {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+// Projetos
+.projeto {
+    height: 450px;
+    width: 300px;
+    border-radius: 5px;
+    transition: 130ms ease;
+    cursor: pointer;
+
+    &:hover {
+        outline: 3px solid #58D956;
+        transform: translateY(-5px);
+        
+    }
+}
+
+.em-breve-projetos {
+    background-color: #58D956;
+    padding: 10px 15px;
+    width: fit-content;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.my-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gradiente {
+    height: 100%;
+    width: 100%;
+    background: rgb(160,82,255);
+    background: linear-gradient(180deg, rgba(160,82,255,0) 0%, rgba(0,0,0,1) 100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    p {
+        color: white;
+        margin-bottom: 25px;
+        font-size: 24px;
+    }
+
+    i {
+        vertical-align: middle;
+    }
+}
+
+.riveva {
+    background: url("images/Riveva.jpg") center center/cover;
+    margin: 5px 10px;
+}
+
+.meu-portfolio {
+    background: url("images/eu.jpg") center center/cover;
+    margin: 5px 10px;
+}
+
+// Contato
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+
+    .divisor {
+        display: flex;
+        justify-content: center;
+        width: 350px;
+        margin: 50px 0;
+
+        .mensagem-divisor {
+            margin: 0 16px;
+        }
+
+        .barra-divisor {
+            display: flex;
+            align-items: center;
+            width: 100%;
+
+            .linha {
+                height: 2px;
+                width: 100%;
+                border-radius: 100px;
+                background-color: #58D956;
+            }
+        }
+    }
+
+    // Redes sociais
+    .sociais {
+        display: flex;
+        justify-content: center;
+
+        .social-item {
+            height: 70px;
+            width: 70px;
+            border-radius: 500px;
+            background-color: #212121;
+            margin: 0 10px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            transition: 150ms ease;
+            cursor: pointer;
+
+            img {
+                height: 50%;
+            }
+
+            &:hover {
+                outline: 2px solid #58D956;
+            }
+        }
+    }
+
+    #meu-email-text {
+        cursor: pointer;
+    }
+}
+
+// Créditos
+.creditos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0;
+
+    img {
+        height: 95px;
+    }
+
+    p {
+        color: #858585;
+    }
+}
+
+// Voltar ao topo
+#btn-home {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    height: 50px;
+    width: 50px;
+    background-color: #58D956;
+    border-radius: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        height: fit-content;
+    }
+
+    img {
+        height: 50%;
+        transition: 300ms ease;
+    }
+
+    &:hover img {
+        transform: translateY(-10px);
+    }
+}
+
+// Sobre este site
+.title-descricao {
+    text-align: justify;
+    max-width: 789px;
+    color: #858585;
+    padding: 0 20px;
+}
+
+.topico {
+    margin-top: 25px;
+
+    p {
+        color: #858585;
+        text-align: justify;
+        max-width: 860px;
+    }
+}
+
+.about-this-website {
+    margin-top: 100px;
+}
+
+.links-portfolio {
+    display: flex;
+    flex-direction: column;
+}
+
+.ver-github {
+    display: block;
+    max-width: 220px;
+    text-decoration: none;
+    color: #151515;
+    padding: 15px 15px;
+    background-color: #58D956;
+    border-radius: 7px;
+    margin-top: 10px;
+    font-weight: bold;
+
+    i {
+        margin-right: 10px;
+    }
+}
+
+.destaque {
+    background-color: #212121;
+    padding: 0 3px;
+    border-radius: 2px;
+    color: #58D956;
+    font-weight: 500;
+}
+
+@media (max-width: 999px) {
+    header {
+        position: fixed;
+        top: 0;
+        width: 100vw;
+    }
+    .nav-list {
+        position: fixed;
+        top: 8vh;
+        right: 0;
+        width: 65vw; /* Mudar o tamanho aqui */
+        height: 92vh;
+        background-color: #151515;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        z-index: 10000;
+
+        li {
+            margin-left: 0;
+            opacity: 0;
+        }
+    }
+
+    .nav-list.active {
+        transform: translateX(0);
+    }
+
+    nav {
+        .mobile-menu {
+            position: fixed;
+            top: 15px;
+            right: 20px;
+            display: block !important;
+        }
+    }
+
+    .container-esquerda-principal {
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            text-align: center;
+        }
+    }
+
+    // Dividor
+    .divide {
+        margin: 10vh auto;
+    }
+
+    // Cards Skills
+    .cards-skills {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .skill-item {
+            margin-bottom: 20px;
+        }
+    }
+
+    .skills-title {
+        text-align: center;
+    }
+
+    // Portfólio   
+    .ver-github {
+        width: 100vw;
+        text-decoration: none;
+        color: #151515;
+        padding: 15px 15px;
+        background-color: #58D956;
+        border-radius: 7px;
+        margin-top: 10px;
+        font-weight: bold;
+    
+        i {
+            margin-right: 10px;
+        }
+    }
+}
