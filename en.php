@@ -16,6 +16,9 @@
 
     <!-- Google description -->
     <meta name="description" content="I'm Antonio, software developer! This is my portfolio. Feel free to see more about me!">
+
+    <!-- Cor barra mobile -->
+    <meta name="theme-color" content="#5CFF58">
 </head>
 
 <body class="bg-dark" id="home">
@@ -36,7 +39,7 @@
 
                     <a href="CV - Antonio Silva.pdf" download="CV Antonio Silva.pdf" class="text-primary link-principal-container fw-bold mb-3 text-decoration-none">Download CV <i class="bi bi-download"></i></a>
 
-                    <a href="index" class="btn btn-primary" id="view-in-english"><i class="bi bi-translate"></i> Ver em Português</a>
+                    <a href="https://euantonio.com/" class="btn btn-primary" id="view-in-english"><i class="bi bi-translate"></i> Ver em Português</a>
                 </div>
 
                 <!-- Right -->

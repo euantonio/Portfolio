@@ -13,6 +13,12 @@
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/code.ico" type="image/x-icon">
+
+    <!-- Não indexar página -->
+    <meta name=”robots” content=”noindex”>
+
+    <!-- Cor barra mobile -->
+    <meta name="theme-color" content="#5CFF58">
 </head>
 
 <body>

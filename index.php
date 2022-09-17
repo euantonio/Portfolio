@@ -16,6 +16,9 @@
 
     <!-- Descrição Google -->
     <meta name="description" content="Eu sou o Antonio, desenvolvedor de software! Este é o meu portfólio. Fique à vontade para ver mais sobre mim!">
+
+    <!-- Cor barra mobile -->
+    <meta name="theme-color" content="#5CFF58">
 </head>
 
 <body class="bg-dark" id="home">
