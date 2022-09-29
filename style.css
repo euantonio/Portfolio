@@ -10914,7 +10914,7 @@ header nav .mobile-menu div {
     flex-wrap: wrap;
   }
   .cards-skills .skill-item {
-    margin-bottom: 20px;
+    margin: 0 0px 20px 0;
   }
   .skills-title {
     text-align: center;

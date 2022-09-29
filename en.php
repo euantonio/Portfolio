@@ -37,8 +37,6 @@
 
                     <p class="text-gray-default mb-3">Software Developer, code and design fan. Currently higher education in Systems Analysis and Development at Unopar.</p>
 
-                    <a href="CV - Antonio Silva.pdf" download="CV Antonio Silva.pdf" class="text-primary link-principal-container fw-bold mb-3 text-decoration-none">Download CV <i class="bi bi-download"></i></a>
-
                     <a href="https://euantonio.com/" class="btn btn-primary" id="view-in-english"><i class="bi bi-translate"></i> Ver em Português</a>
                 </div>
 
@@ -75,6 +73,13 @@
                 <p class="text-white">Ongoing</p>
                 <p class="text-white">Started in July 2022</p>
                 <p class="text-white">Estimate for December 2025</p>
+            </div>
+
+            <div class="formacao mb-5">
+                <h2 class="text-primary fw-bold">Courses</h2>
+                <h5 class="fw-bold text-primary">👉 Object-oriented Programming in PHP</h5>
+                <p class="text-white">Ongoing</p>
+                <p class="text-white">Udemy</p>
             </div>
 
             <div class="idiomas mb-5">

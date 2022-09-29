@@ -37,7 +37,7 @@
 
                     <p class="text-gray-default mb-3">Software Developer, apaixonado por códigos e por design. Atualmente cursando ensino superior em Analise e Desenvolvimento de Sistemas pela Unopar.</p>
 
-                    <a href="Currículo Antonio Silva.pdf" download="Currículo Antonio Silva.pdf" class="text-primary link-principal-container fw-bold mb-3 text-decoration-none">Download Currículo <i class="bi bi-download"></i></a>
+                    <p class="mb-3"><span class="destaque"><i class="bi bi-chat-left-quote"></i> Preferência por estágio</span></p>
 
                     <a href="en" class="btn btn-primary" id="view-in-english"><i class="bi bi-translate"></i> View in English</a>
                 </div>
@@ -75,6 +75,13 @@
                 <p class="text-white">Em andamento</p>
                 <p class="text-white">Início em Julho de 2022</p>
                 <p class="text-white">Previsão para Dezembro de 2025</p>
+            </div>
+
+            <div class="formacao mb-5">
+                <h2 class="text-primary fw-bold">Cursos</h2>
+                <h5 class="fw-bold text-primary">👉 PHP Orientado a Objetos</h5>
+                <p class="text-white">Em andamento</p>
+                <p class="text-white">Udemy</p>
             </div>
 
             <div class="idiomas mb-5">
