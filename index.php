@@ -37,7 +37,7 @@
 
                     <p class="text-gray-default mb-3">Software Developer, apaixonado por códigos e por design. Atualmente cursando ensino superior em Analise e Desenvolvimento de Sistemas pela Unopar.</p>
 
-                    <p class="mb-3"><span class="destaque"><i class="bi bi-chat-left-quote"></i> Preferência por estágio</span></p>
+                    <!-- <p class="mb-3"><span class="destaque"><i class="bi bi-chat-left-quote"></i> Preferência por estágio</span></p> -->
 
                     <a href="en" class="btn btn-primary" id="view-in-english"><i class="bi bi-translate"></i> View in English</a>
                 </div>
