@@ -289,6 +289,11 @@ header {
     margin: 5px 10px;
 }
 
+.games-projeto {
+    background: url("images/pexels-cottonbro-4009623.jpg") center center/cover;
+    margin: 5px 10px;
+}
+
 // Contato
 .contato {
     display: flex;
@@ -336,7 +341,7 @@ header {
             justify-content: center;
             align-items: center;
 
-            transition: 150ms ease;
+            transition: 300ms ease;
             cursor: pointer;
 
             img {
@@ -344,7 +349,7 @@ header {
             }
 
             &:hover {
-                outline: 2px solid #58D956;
+                transform: translateY(-5px);
             }
         }
     }

@@ -10725,6 +10725,11 @@ header nav .mobile-menu div {
   margin: 5px 10px;
 }
 
+.games-projeto {
+  background: url("images/pexels-cottonbro-4009623.jpg") center center/cover;
+  margin: 5px 10px;
+}
+
 .contato {
   display: flex;
   flex-direction: column;
@@ -10764,14 +10769,14 @@ header nav .mobile-menu div {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 150ms ease;
+  transition: 300ms ease;
   cursor: pointer;
 }
 .contato .sociais .social-item img {
   height: 50%;
 }
 .contato .sociais .social-item:hover {
-  outline: 2px solid #58D956;
+  transform: translateY(-5px);
 }
 .contato #meu-email-text {
   cursor: pointer;

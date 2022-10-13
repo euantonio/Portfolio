@@ -83,8 +83,8 @@ function copiar() {
   swal("Sucesso!", "O e-mail foi copiado para a área de transferência.", "success");
 }
 
-// Riveva (ainda em desenvolvimento)
-$(".riveva").click(function(){
+// Projeto ainda em desenvolvimento
+$(".em-desenvolvimento").click(function(){
   swal("Este projeto ainda está em desenvolvimento.\nEm breve estará disponível!")
 })
 

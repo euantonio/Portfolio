@@ -240,8 +240,15 @@
                     </div>
                 </div>
 
+                <!-- Projeto de games -->
+                <div class="projeto games-projeto em-desenvolvimento">
+                    <div class="gradiente">
+                        <p>Games Stats <i class="bi bi-arrow-right-short"></i></p>
+                    </div>
+                </div>
+
                 <!-- Riveva -->
-                <div class="projeto riveva">
+                <div class="projeto riveva em-desenvolvimento">
                     <div class="gradiente">
                         <p>Riveva <i class="bi bi-arrow-right-short"></i></p>
                     </div>

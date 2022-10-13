@@ -83,8 +83,8 @@ function copiar() {
   swal("Success!", "My e-mail is now in your clipboard!", "success");
 }
 
-// Riveva (ainda em desenvolvimento)
-$(".riveva").click(function(){
+// Projeto em desenvolvimento
+$(".em-desenvolvimento").click(function(){
   swal("This project is still in development.\nSoon it'll be available!")
 })
 

@@ -242,6 +242,13 @@
                     </div>
                 </div>
 
+                <!-- Projeto de games -->
+                <div class="projeto games-projeto em-desenvolvimento">
+                    <div class="gradiente">
+                        <p>Games Stats <i class="bi bi-arrow-right-short"></i></p>
+                    </div>
+                </div>
+
                 <!-- Riveva -->
                 <div class="projeto riveva">
                     <div class="gradiente">
@@ -270,9 +277,13 @@
 
             <!-- Dividor -->
             <div class="divisor">
-                <div class="barra-divisor"><div class="linha"></div></div>
+                <div class="barra-divisor">
+                    <div class="linha"></div>
+                </div>
                 <div class="mensagem-divisor text-white fs-4">or</div>
-                <div class="barra-divisor"><div class="linha"></div></div>
+                <div class="barra-divisor">
+                    <div class="linha"></div>
+                </div>
             </div>
 
             <!-- Redes sociais -->
