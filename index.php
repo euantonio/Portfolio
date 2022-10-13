@@ -37,8 +37,6 @@
 
                     <p class="text-gray-default mb-3">Software Developer, apaixonado por códigos e por design. Atualmente cursando ensino superior em Analise e Desenvolvimento de Sistemas pela Unopar.</p>
 
-                    <!-- <p class="mb-3"><span class="destaque"><i class="bi bi-chat-left-quote"></i> Preferência por estágio</span></p> -->
-
                     <a href="en" class="btn btn-primary" id="view-in-english"><i class="bi bi-translate"></i> View in English</a>
                 </div>
 
@@ -62,6 +60,7 @@
                 <div class="sobre-dados col-lg-6 col-md-12 mt-4">
                     <p class="fw-bold text-primary mb-1"><i class="bi bi-geo-alt-fill"></i> Localização</p>
                     <p class="text-white mb-1">Piracicaba, SP</p>
+                    <p class="destaque mb-3">com disponibilidade para mudança</p>
 
                     <p class="fw-bold text-primary mb-1"><i class="bi bi-calendar"></i> Nascimento</p>
                     <p class="text-white mb-1">06/05/2001 (21 anos)</p>

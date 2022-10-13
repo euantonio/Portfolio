@@ -10858,10 +10858,13 @@ header nav .mobile-menu div {
 
 .destaque {
   background-color: #212121;
-  padding: 0 3px;
+  padding: 5px 10px;
   border-radius: 2px;
   color: #58D956;
   font-weight: 500;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 @media (max-width: 999px) {
