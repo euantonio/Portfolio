@@ -61,12 +61,12 @@ $(".whatsapp").click(function(){
   open("https://wa.me/5519996691628/", "_blank")
 })
 
-// Linkedin
+// LinkedIn link
 $(".linkedin").click(function(){
   open("https://www.linkedin.com/in/euantonio/", "_blank")
 })
 
-// Github
+// Github link
 $(".github").click(function(){
   open("https://github.com/euantonio", "_blank")
 })
