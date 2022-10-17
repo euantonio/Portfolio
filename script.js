@@ -71,12 +71,12 @@ $(".github").click(function(){
   open("https://github.com/euantonio", "_blank")
 })
 
-// Copiar para área de transferência
+// Copiar e-mail para a área de transferência
 function copiar() {
   var copyText = document.getElementById("meu-email");
 
   copyText.select();
-  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+  copyText.setSelectionRange(0, 99999);
 
   navigator.clipboard.writeText(copyText.value);
 
