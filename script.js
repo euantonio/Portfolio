@@ -13,9 +13,7 @@ class MobileNavbar {
     this.navLinks.forEach((link, index) => {
       link.style.animation
         ? (link.style.animation = "")
-        : (link.style.animation = `navLinkFade 0.5s ease forwards ${
-            index / 7 + 0.3
-          }s`);
+        : (link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`);
     });
   }
   
@@ -66,7 +64,7 @@ $(".linkedin").click(function(){
   open("https://www.linkedin.com/in/euantonio/", "_blank")
 })
 
-// Github link
+// Github
 $(".github").click(function(){
   open("https://github.com/euantonio", "_blank")
 })

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-    <title>Antonio Silva | Portfólio</title>
+    <title>Antonio Silva | Dev</title>
     <link rel="stylesheet" href="style.css">
 
     <!-- Bootstrap ícones -->
@@ -35,7 +35,8 @@
                 <div class="col-md-12 col-lg-6 container-esquerda-principal">
                     <h1 class="text-white fw-bold mb-4">Antonio <span class="text-primary">{desenvolvedor}</span></h1>
 
-                    <p class="text-gray-default mb-3">Software Developer, apaixonado por códigos e por design. Atualmente cursando ensino superior em Analise e Desenvolvimento de Sistemas pela Unopar.</p>
+                    <p class="text-gray-default mb-3">Desenvolvedor de Software na Duptec.</p>
+                    <p class="destaque mb-3">PHP | Python</p>
 
                     <a href="en" class="btn btn-primary" id="view-in-english"><i class="bi bi-translate"></i> View in English</a>
                 </div>
@@ -60,7 +61,7 @@
                 <div class="sobre-dados col-lg-6 col-md-12 mt-4">
                     <p class="fw-bold text-primary mb-1"><i class="bi bi-geo-alt-fill"></i> Localização</p>
                     <p class="text-white mb-1">Piracicaba, SP</p>
-                    <p class="destaque mb-3">com disponibilidade para mudança</p>
+                    <p class="destaque mb-3">Com disponibilidade para mudança</p>
 
                     <p class="fw-bold text-primary mb-1"><i class="bi bi-calendar"></i> Nascimento</p>
                     <p class="text-white mb-1">06/05/2001 (21 anos)</p>
@@ -78,7 +79,7 @@
 
             <div class="formacao mb-5">
                 <h2 class="text-primary fw-bold">Cursos</h2>
-                <h5 class="fw-bold text-primary">👉 PHP Orientado a Objetos</h5>
+                <h5 class="fw-bold text-primary">👉 PHP Orientado a Objetos | MVC</h5>
                 <p class="text-white">Em andamento</p>
                 <p class="text-white">Udemy</p>
             </div>
@@ -243,14 +244,7 @@
                 <!-- Projeto de games -->
                 <div class="projeto games-projeto em-desenvolvimento">
                     <div class="gradiente">
-                        <p>Games Stats <i class="bi bi-arrow-right-short"></i></p>
-                    </div>
-                </div>
-
-                <!-- Riveva -->
-                <div class="projeto riveva em-desenvolvimento">
-                    <div class="gradiente">
-                        <p>Riveva <i class="bi bi-arrow-right-short"></i></p>
+                        <p>Astroo <i class="bi bi-arrow-right-short"></i></p>
                     </div>
                 </div>
 

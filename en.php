@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-    <title>Antonio Silva | Portfolio</title>
+    <title>Antonio Silva | Dev</title>
     <link rel="stylesheet" href="style.css">
 
     <!-- Bootstrap ícones -->
@@ -35,9 +35,11 @@
                 <div class="col-md-12 col-lg-6 container-esquerda-principal">
                     <h1 class="text-white fw-bold mb-4">Antonio <span class="text-primary">{developer}</span></h1>
 
-                    <p class="text-gray-default mb-3">Software Developer, code and design fan. Currently higher education in Systems Analysis and Development at Unopar.</p>
+                    <p class="text-gray-default mb-3">Software Developer at Duptec.</p>
 
-                    <a href="https://euantonio.com/" class="btn btn-primary" id="view-in-english"><i class="bi bi-translate"></i> Ver em Português</a>
+                    <p class="destaque mb-3">PHP | Python</p>
+
+                    <a href="index" class="btn btn-primary" id="view-in-english"><i class="bi bi-translate"></i> Ver em Português</a>
                 </div>
 
                 <!-- Right -->
@@ -77,7 +79,7 @@
 
             <div class="formacao mb-5">
                 <h2 class="text-primary fw-bold">Courses</h2>
-                <h5 class="fw-bold text-primary">👉 Object-oriented Programming in PHP</h5>
+                <h5 class="fw-bold text-primary">👉 Object-oriented Programming in PHP | MVC</h5>
                 <p class="text-white">Ongoing</p>
                 <p class="text-white">Udemy</p>
             </div>
@@ -245,14 +247,7 @@
                 <!-- Projeto de games -->
                 <div class="projeto games-projeto em-desenvolvimento">
                     <div class="gradiente">
-                        <p>Games Stats <i class="bi bi-arrow-right-short"></i></p>
-                    </div>
-                </div>
-
-                <!-- Riveva -->
-                <div class="projeto riveva">
-                    <div class="gradiente">
-                        <p>Riveva <i class="bi bi-arrow-right-short"></i></p>
+                        <p>Astroo <i class="bi bi-arrow-right-short"></i></p>
                     </div>
                 </div>
 
