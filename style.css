@@ -10474,6 +10474,14 @@ textarea.form-control-lg {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+main {
+  padding-top: 120px !important;
 }
 
 body {
@@ -10491,6 +10499,11 @@ body::-webkit-scrollbar-thumb {
   border-radius: 30px;
 }
 
+header {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+}
 header a {
   color: white;
   text-decoration: none;
@@ -10507,7 +10520,9 @@ header nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #151515;
+  backdrop-filter: blur(10px) saturate(100%);
+  -webkit-backdrop-filter: blur(3px) saturate(100%);
+  background-color: rgba(21, 21, 21, 0.5137254902);
   height: 8vh;
 }
 header nav .nav-list {
@@ -10587,7 +10602,6 @@ header nav .mobile-menu div {
 }
 
 .link-principal-container {
-  transition: 260ms ease-in;
   font-size: 19px;
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
@@ -10623,43 +10637,23 @@ header nav .mobile-menu div {
 }
 
 .skill-item {
-  height: 350px;
-  width: 350px;
+  height: 200px;
+  width: 200px;
   background-color: #212121;
-  border-radius: 3px;
+  border-radius: 10px;
   padding: 30px;
-  transition: 130ms ease;
   margin: 0 20px 20px 0;
-}
-.skill-item .skill-img {
-  background-color: #171717;
-  height: 25%;
-  width: 25%;
   display: flex;
-  align-items: center;
   justify-content: center;
-  border-radius: 500px;
-  overflow: hidden;
-  margin-bottom: 15px;
+  align-items: center;
 }
-.skill-item .skill-img img {
+.skill-item img {
   height: 50%;
-  width: auto;
-}
-.skill-item .card-title-skill {
-  font-size: 20px;
-}
-.skill-item .divider-skills {
-  height: 2px;
-  width: 35%;
-  background-color: #58D956;
-}
-.skill-item .description-skill {
-  font-size: 14px;
 }
 .skill-item:hover {
   outline: 3px solid #58D956;
   transform: translateY(-5px);
+  transition: 100ms ease !important;
 }
 
 .cards-skills {
@@ -10672,13 +10666,14 @@ header nav .mobile-menu div {
 .projeto {
   height: 450px;
   width: 300px;
-  border-radius: 5px;
-  transition: 130ms ease;
+  border-radius: 10px;
+  overflow: hidden;
   cursor: pointer;
 }
 .projeto:hover {
   outline: 3px solid #58D956;
   transform: translateY(-5px);
+  transition: 100ms ease !important;
 }
 
 .em-breve-projetos {
@@ -10715,18 +10710,13 @@ header nav .mobile-menu div {
   vertical-align: middle;
 }
 
-.riveva {
-  background: url("images/Riveva.jpg") center center/cover;
-  margin: 5px 10px;
-}
-
 .meu-portfolio {
   background: url("images/eu.jpg") center center/cover;
   margin: 5px 10px;
 }
 
-.games-projeto {
-  background: url("images/pexels-cottonbro-4009623.jpg") center center/cover;
+.astroo {
+  background: url("images/gym.jpg") center center/cover;
   margin: 5px 10px;
 }
 
@@ -10759,21 +10749,23 @@ header nav .mobile-menu div {
 .contato .sociais {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .contato .sociais .social-item {
   height: 70px;
   width: 70px;
   border-radius: 500px;
   background-color: #212121;
-  margin: 0 10px;
+  margin: 0 10px 20px 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: 300ms ease;
   cursor: pointer;
 }
-.contato .sociais .social-item img {
-  height: 50%;
+.contato .sociais .social-item i {
+  color: #58D956;
+  font-size: 25px;
 }
 .contato .sociais .social-item:hover {
   transform: translateY(-5px);
@@ -10872,6 +10864,18 @@ header nav .mobile-menu div {
   width: fit-content;
 }
 
+/* Animação scroll load */
+.hidden {
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: 1s ease;
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 @media (max-width: 999px) {
   header {
     position: fixed;
@@ -10922,7 +10926,7 @@ header nav .mobile-menu div {
     flex-wrap: wrap;
   }
   .cards-skills .skill-item {
-    margin: 0 0px 20px 0;
+    margin: 20px;
   }
   .skills-title {
     text-align: center;

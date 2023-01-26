@@ -43,14 +43,17 @@ class MobileNavbar {
 
 mobileNavbar.init();
 
+/* Ao carregar documento */
+$(window).on("load", function() {
+  calcularIdade()
+});
+
 // Remover background "contato"
 setInterval(function(){
   if($("body").width() < 1000) {
     $("#remove-background").removeClass("remove-background")
-    console.log('REMOVE')
   } else {
     $("#remove-background").addClass("remove-background")
-    console.log('ADICIONA')
   }
 }, 200)
 
@@ -67,6 +70,16 @@ $(".linkedin").click(function(){
 // Github
 $(".github").click(function(){
   open("https://github.com/euantonio", "_blank")
+})
+
+// Discord
+$(".discord").click(function(){
+  open("https://discord.com/users/858853374664245258", "_blank")
+})
+
+// Instagram
+$(".instagram").click(function(){
+  open("https://instagram.com/barba.css", "_blank")
 })
 
 // Copiar e-mail para a área de transferência
@@ -90,3 +103,76 @@ $(".em-desenvolvimento").click(function(){
 $(".meu-portfolio").click(function(){
   open("portfolio", "_self")
 })
+
+// Astroo
+$(".astroo").click(function(){
+  open("https://astroo.com.br", "_blank")
+})
+
+/* Animação de carregamento */
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) =>{
+    if(entry.isIntersecting){
+      entry.target.classList.add('show')
+    }
+
+    /*
+    ATENÇÃO
+    
+    Para fazer o efeito sempre, adicionar um else
+    e dentro dele, colocar entry.target.classList.remove('show')
+    */
+  })
+})
+
+const HiddenElements = document.querySelectorAll('.hidden')
+HiddenElements.forEach((el) => observer.observe(el))
+
+/* Efeito texto principal */
+let string = "{desenvolvedor}";
+let index = 0;
+let direction = 1;
+
+function animate() {
+  let char = string.charAt(index);
+  
+  if (direction === 1) {
+    document.getElementById("text").innerHTML += char;
+  } else {
+    document.getElementById("text").innerHTML = document.getElementById("text").innerHTML.slice(0, -1);
+  }
+  
+  index += direction;
+  
+  if (index === string.length) {
+    direction = -1;
+  }
+  
+  if (index === -1) {
+    direction = 1;
+  }
+  
+  setTimeout(animate, 200);
+}
+
+/* Chama a função */
+animate();
+
+function calcularIdade(){
+  // Pega a data atual
+  const today = new Date();
+
+  // Define a data de nascimento no formato brasileiro
+  const birthDate = "06/05/2001";
+
+  // Converte a data de nascimento para o formato de data do JavaScript
+  const convertedBirthDate = new Date(birthDate);
+
+  // Calcula a diferença entre as duas datas em milissegundos
+  const ageInMilliseconds = today - convertedBirthDate;
+
+  // Converte a diferença para anos
+  const ageInYears = ageInMilliseconds / (1000 * 60 * 60 * 24 * 365.25);
+
+  document.querySelector('.idade').innerHTML = `06/05/2001 (${ageInYears | 0} anos)`
+}

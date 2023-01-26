@@ -21,7 +21,7 @@
     <meta name="theme-color" content="#5CFF58">
 </head>
 
-<body class="bg-dark" id="home">
+<body class="bg-dark" id="home" oncontextmenu="return false;">
 
     <!-- Menu -->
     <?php include_once 'menu.php'; ?>
@@ -32,17 +32,17 @@
             <div class="row">
 
                 <!-- Esquerda -->
-                <div class="col-md-12 col-lg-6 container-esquerda-principal">
-                    <h1 class="text-white fw-bold mb-4">Antonio <span class="text-primary">{desenvolvedor}</span></h1>
+                <div class="col-md-12 col-lg-6 container-esquerda-principal hidden">
+                    <h1 class="text-white fw-bold mb-4">Antonio <span class="text-primary" id="text"></span></h1>
 
                     <p class="text-gray-default mb-3">Desenvolvedor de Software na Duptec.</p>
                     <p class="destaque mb-3">PHP | Python</p>
 
-                    <a href="en" class="btn btn-primary" id="view-in-english"><i class="bi bi-translate"></i> View in English</a>
+                    <a href="https://wa.me/5519996691628" class="btn btn-primary" id="view-in-english"><i class="bi bi-whatsapp"></i> WhatsApp</a>
                 </div>
 
                 <!-- Direita -->
-                <div class="col-md-12 col-lg-6">
+                <div class="col-md-12 col-lg-6 hidden">
                     <img src="./images/foto-principal.png" alt="Imagem principal" id="imagem-principal">
                 </div>
             </div>
@@ -54,21 +54,21 @@
         <!-- Sobre mim -->
         <div class="sobre-mim container" id="sobremim">
             <div class="sobre row mb-5">
-                <div class="sobre-infos col-lg-6 col-md-12">
+                <div class="hidden sobre-infos col-lg-6 col-md-12">
                     <h2 class="text-primary fw-bold">Sobre mim</h2>
                     <p class="text-white">Olá, eu sou o Antonio! Sou fascinado por jogos, músicas, filmes e, principalmente, por tecnologia! Por volta de 2015 eu comecei a estudar sobre design e edição de vídeos, porque desde pequeno era uma pessoa criativa. Mas foi no ano de 2020 que tive meu primeiro contato com o desenvolvimento web, e foi amor à primeira vista! Desde então, venho buscando aprender coisas novas e evoluir nesse mundo imenso da programação.</p>
                 </div>
-                <div class="sobre-dados col-lg-6 col-md-12 mt-4">
+                <div class="hidden sobre-dados col-lg-6 col-md-12 mt-4">
                     <p class="fw-bold text-primary mb-1"><i class="bi bi-geo-alt-fill"></i> Localização</p>
                     <p class="text-white mb-1">Piracicaba, SP</p>
                     <p class="destaque mb-3">Com disponibilidade para mudança</p>
 
                     <p class="fw-bold text-primary mb-1"><i class="bi bi-calendar"></i> Nascimento</p>
-                    <p class="text-white mb-1">06/05/2001 (21 anos)</p>
+                    <p class="text-white mb-1 idade"></p>
                 </div>
             </div>
 
-            <div class="formacao mb-5">
+            <div class="hidden formacao mb-5">
                 <h2 class="text-primary fw-bold">Formação acadêmica</h2>
                 <h5 class="fw-bold text-primary">👉 Unopar</h5>
                 <p class="text-white">Análise e Desenvolvimento de Sistemas</p>
@@ -77,14 +77,14 @@
                 <p class="text-white">Previsão para Dezembro de 2025</p>
             </div>
 
-            <div class="formacao mb-5">
+            <div class="hidden formacao mb-5">
                 <h2 class="text-primary fw-bold">Cursos</h2>
                 <h5 class="fw-bold text-primary">👉 PHP Orientado a Objetos | MVC</h5>
                 <p class="text-white">Em andamento</p>
                 <p class="text-white">Udemy</p>
             </div>
 
-            <div class="idiomas mb-5">
+            <div class="hidden idiomas mb-5">
                 <h2 class="text-primary fw-bold">Idiomas</h2>
                 <h5 class="fw-bold text-primary">👉 Inglês</h5>
                 <p class="text-white">Avançado | C1</p>
@@ -103,120 +103,48 @@
             <!-- Conteúdo principal -->
             <div class="cards-skills mt-5 mb-2">
                 <!-- HTML -->
-                <div class="skill-item">
-                    <div class="skill-img">
-                        <img src="./images/HTML.png">
-                    </div>
-
-                    <p class="text-primary fw-bold card-title-skill">HTML</p>
-
-                    <div class="divider-skills description-skill mb-3 mt-2"></div>
-
-                    <p class="text-white">Primeira linguagem que aprendi! Através dela que descobri tantas outras!</p>
+                <div class="skill-item hidden">
+                    <img src="./images/HTML.png">
                 </div>
 
                 <!-- CSS -->
-                <div class="skill-item">
-                    <div class="skill-img">
-                        <img src="./images/CSS.png">
-                    </div>
-
-                    <p class="text-primary fw-bold card-title-skill">CSS</p>
-
-                    <div class="divider-skills description-skill mb-3 mt-2"></div>
-
-                    <p class="text-white">Uma das minhas linguagens queridas! Eu, como todo apaixonado por design, adora dar estilo às coisas. 🥰</p>
+                <div class="skill-item hidden">
+                    <img src="./images/CSS.png">
                 </div>
 
                 <!-- JavaScript -->
-                <div class="skill-item">
-                    <div class="skill-img">
-                        <img src="./images/JS.png">
-                    </div>
-
-                    <p class="text-primary fw-bold card-title-skill">JavaScript</p>
-
-                    <div class="divider-skills description-skill mb-3 mt-2"></div>
-
-                    <p class="text-white">Confesso que quebrei cabeça no começo com esse, mas hoje ele não me dá mais medo. Buscando sempre evoluir! 🚀</p>
+                <div class="skill-item hidden">
+                    <img src="./images/JS.png">
                 </div>
 
                 <!-- Bootstrap -->
-                <div class="skill-item">
-                    <div class="skill-img">
-                        <img src="./images/BOOTSTRAP.png">
-                    </div>
-
-                    <p class="text-primary fw-bold card-title-skill">Bootstrap</p>
-
-                    <div class="divider-skills description-skill mb-3 mt-2"></div>
-
-                    <p class="text-white">Quando estou estudando, ele é ótimo para agilizar alguns trabalhos, por ser prático.</p>
+                <div class="skill-item hidden">
+                    <img src="./images/BOOTSTRAP.png">
                 </div>
 
                 <!-- PHP -->
-                <div class="skill-item">
-                    <div class="skill-img">
-                        <img src="./images/PHP.png">
-                    </div>
-
-                    <p class="text-primary fw-bold card-title-skill">PHP</p>
-
-                    <div class="divider-skills description-skill mb-3 mt-2"></div>
-
-                    <p class="text-white">A minha linguagem favorita! Por dar possibilidade de fazer muitas coisas!</p>
+                <div class="skill-item hidden">
+                    <img src="./images/PHP.png">
                 </div>
 
                 <!-- SQL -->
-                <div class="skill-item">
-                    <div class="skill-img">
-                        <img src="./images/MYSQL.png">
-                    </div>
-
-                    <p class="text-primary fw-bold card-title-skill">SQL</p>
-
-                    <div class="divider-skills description-skill mb-3 mt-2"></div>
-
-                    <p class="text-white">Um complemento para o PHP, não pode faltar um banco de dados.</p>
+                <div class="skill-item hidden">
+                    <img src="./images/MYSQL.png">
                 </div>
 
                 <!-- Excel -->
-                <div class="skill-item">
-                    <div class="skill-img">
-                        <img src="./images/excel.png">
-                    </div>
-
-                    <p class="text-primary fw-bold card-title-skill">Excel</p>
-
-                    <div class="divider-skills description-skill mb-3 mt-2"></div>
-
-                    <p class="text-white">Ótima ferramenta para organizar e gerenciar dados.</p>
+                <div class="skill-item hidden">
+                    <img src="./images/excel.png">
                 </div>
 
                 <!-- Photoshop -->
-                <div class="skill-item">
-                    <div class="skill-img">
-                        <img src="./images/photoshop.png">
-                    </div>
-
-                    <p class="text-primary fw-bold card-title-skill">Photoshop</p>
-
-                    <div class="divider-skills description-skill mb-3 mt-2"></div>
-
-                    <p class="text-white">Um dos programas que mais adoro! Aqui o céu não é o limite. </p>
+                <div class="skill-item hidden">
+                    <img src="./images/photoshop.png">
                 </div>
 
                 <!-- Figma -->
-                <div class="skill-item">
-                    <div class="skill-img">
-                        <img src="./images/figma.png">
-                    </div>
-
-                    <p class="text-primary fw-bold card-title-skill">Figma</p>
-
-                    <div class="divider-skills description-skill mb-3 mt-2"></div>
-
-                    <p class="text-white">Aqui é onde nasce todos os outros projetos. Onde a gente pode deixar a criatividade à solta e criar muitas coisas bacanas!</p>
+                <div class="skill-item hidden">
+                    <img src="./images/figma.png">
                 </div>
             </div>
         </div>
@@ -235,14 +163,14 @@
             <!-- Projetos principais -->
             <div class="my-projects">
                 <!-- Meu portfólio -->
-                <div class="projeto meu-portfolio">
+                <div class="hidden projeto meu-portfolio">
                     <div class="gradiente">
                         <p>Portfólio <i class="bi bi-arrow-right-short"></i></p>
                     </div>
                 </div>
 
-                <!-- Projeto de games -->
-                <div class="projeto games-projeto em-desenvolvimento">
+                <!-- Projeto Astroo -->
+                <div class="hidden projeto astroo">
                     <div class="gradiente">
                         <p>Astroo <i class="bi bi-arrow-right-short"></i></p>
                     </div>
@@ -269,9 +197,13 @@
 
             <!-- Dividor -->
             <div class="divisor">
-                <div class="barra-divisor"><div class="linha"></div></div>
+                <div class="barra-divisor">
+                    <div class="linha"></div>
+                </div>
                 <div class="mensagem-divisor text-white fs-4">ou</div>
-                <div class="barra-divisor"><div class="linha"></div></div>
+                <div class="barra-divisor">
+                    <div class="linha"></div>
+                </div>
             </div>
 
             <!-- Redes sociais -->
@@ -279,17 +211,27 @@
 
                 <!-- WhatsApp -->
                 <div class="whatsapp social-item">
-                    <img src="./images/whatsapp.png">
+                    <i class="bi bi-whatsapp"></i>
                 </div>
 
                 <!-- Linkedin -->
                 <div class="linkedin social-item">
-                    <img src="./images/linkedin.png">
+                    <i class="bi bi-linkedin"></i>
                 </div>
 
                 <!-- Github -->
                 <div class="github social-item">
-                    <img src="./images/github.png">
+                    <i class="bi bi-github"></i>
+                </div>
+
+                <!-- Discord -->
+                <div class="discord social-item">
+                    <i class="bi bi-discord"></i>
+                </div>
+
+                <!-- Instagram -->
+                <div class="instagram social-item">
+                    <i class="bi bi-instagram"></i>
                 </div>
 
             </div>

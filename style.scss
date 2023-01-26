@@ -20,6 +20,11 @@ $body-bg: #171717;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    user-select: none;
+}
+
+main {
+    padding-top: 120px !important;
 }
 
 body {
@@ -40,6 +45,10 @@ body::-webkit-scrollbar-thumb{
 
 // Menu
 header {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+
     a {
         color: #ffff;
         text-decoration: none;
@@ -59,7 +68,9 @@ header {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        background-color: #151515;
+        backdrop-filter: blur(10px) saturate(100%);
+        -webkit-backdrop-filter: blur(3px) saturate(100%);
+        background-color: #15151583;
         height: 8vh;
 
         .nav-list {
@@ -139,7 +150,6 @@ header {
 }
 
 .link-principal-container {
-    transition: 260ms ease-in;
     font-size: 19px;
     max-width: fit-content;
 
@@ -177,48 +187,25 @@ header {
 
 // Cards skills
 .skill-item {
-    height: 350px;
-    width: 350px;
+    height: 200px;
+    width: 200px;
     background-color: #212121;
-    border-radius: 3px;
+    border-radius: 10px;
     padding: 30px;
-    transition: 130ms ease;
     margin: 0 20px 20px 0;
 
-    .skill-img {
-        background-color: #171717;
-        height: 25%;
-        width: 25%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 500px;
-        overflow: hidden;
-        margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-        img {
-            height: 50%;
-            width: auto;
-        }
-    }
-
-    .card-title-skill {
-        font-size: 20px;
-    }
-
-    .divider-skills {
-        height: 2px;
-        width: 35%;
-        background-color: #58D956;
-    }
-
-    .description-skill {
-        font-size: 14px;
+    img {
+        height: 50%;
     }
 
     &:hover {
         outline: 3px solid #58D956;
         transform: translateY(-5px);
+        transition: 100ms ease !important;
     }
 }
 
@@ -233,14 +220,14 @@ header {
 .projeto {
     height: 450px;
     width: 300px;
-    border-radius: 5px;
-    transition: 130ms ease;
+    border-radius: 10px;
+    overflow: hidden;
     cursor: pointer;
 
     &:hover {
         outline: 3px solid #58D956;
         transform: translateY(-5px);
-        
+        transition: 100ms ease !important;
     }
 }
 
@@ -279,18 +266,13 @@ header {
     }
 }
 
-.riveva {
-    background: url("images/Riveva.jpg") center center/cover;
-    margin: 5px 10px;
-}
-
 .meu-portfolio {
     background: url("images/eu.jpg") center center/cover;
     margin: 5px 10px;
 }
 
-.games-projeto {
-    background: url("images/pexels-cottonbro-4009623.jpg") center center/cover;
+.astroo {
+    background: url("images/gym.jpg") center center/cover;
     margin: 5px 10px;
 }
 
@@ -329,13 +311,14 @@ header {
     .sociais {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
 
         .social-item {
             height: 70px;
             width: 70px;
             border-radius: 500px;
             background-color: #212121;
-            margin: 0 10px;
+            margin: 0 10px 20px 10px;
 
             display: flex;
             justify-content: center;
@@ -344,8 +327,9 @@ header {
             transition: 300ms ease;
             cursor: pointer;
 
-            img {
-                height: 50%;
+            i {
+                color: #58D956;
+                font-size: 25px;
             }
 
             &:hover {
@@ -455,6 +439,18 @@ header {
     width: fit-content;
 }
 
+/* Animação scroll load */
+.hidden {
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: 1s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 @media (max-width: 999px) {
     header {
         position: fixed;
@@ -516,7 +512,7 @@ header {
         flex-wrap: wrap;
 
         .skill-item {
-            margin: 0 0px 20px 0;
+            margin: 20px;
         }
     }
 
